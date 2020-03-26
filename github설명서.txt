@@ -1,0 +1,13 @@
+1. git status
+- 새로운 폴더나 파일이 있는지 확인
+
+2. git add .
+- 깃에 올릴 파일들을 정리해서 업로드 준비
+
+3. git commit -m "할말쫘라라"
+- 업로드 하며 업로드 되는 파일들에 대한 설명을 메세지로 전송
+
+4. git push origin master
+- 업로드 완료
+
+(5. 한번더 확인하고 싶으면 git status)
