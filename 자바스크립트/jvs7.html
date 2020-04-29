@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+  <script>
+    document.write("<h3>별 문자 출력하기</h3>");
+    document.write("<hr>");
+
+    var n; // 배열 n 선언
+
+    n = prompt("정수 입력");
+
+function PrintStar(){
+
+  for(var i=0;i<n;i++){
+    for(var j=1;j<=i+1;j++){
+      document.write("*");
+    }
+    document.write("</br>");
+  }
+  if(isNaN(n) || n < 1 || n > 9) {
+document.write("입력 오류 입니다.")
+return;
+}
+
+
+
+}
+
+PrintStar();
+
+  </script>
+</body>
+
+</html>
