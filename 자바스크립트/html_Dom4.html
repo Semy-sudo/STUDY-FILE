@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>계산해봅시다</title>
+  <!--span 태그-글자숨기기기능, 파란색-->
+<script>
+//기능을 직접 onclick 에 작성하기
+  function answer(obj){
+    document.write(obj);
+  }
+</script>
+</head>
+<body>
+  <h3>계산해봅시다</h3>
+  <hr>
+  <!-- 요소에 포함된 html을 eval() 함수로 그때그때 바꿔준다 -->
+<p>2 + 4 = <span onclick="this.innerHTML =eval(2+4)">답</span> </p>
+<p>4 * 20 + 64 =<span onclick="this.innerHTML =eval(4 * 20 + 64)"> 답</span></p>
+<p>20/5-8*2 = <span onclick="this.innerHTML =eval(20/5-8*2)">답</span></p>
+</body>
+</html>

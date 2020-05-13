@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>visibility프로퍼티</title>
+  <!--span 태그-글자숨기기기능, 파란색-->
+  <style>
+  span {
+visibility : hidden;
+color : blue;
+}
+  </style>
+<script>
+function up()
+    {
+      var objArray = document.getElementsByTagName("span");//span 태그찾기
+    	for(var i=0; i<objArray.length; i++) { //찾은거 만큼
+    		var obj = objArray[i];
+    	    var style = window.getComputedStyle(obj); //obj의 css를 담당하고 있는객체를 style이라 하자
+    	    var v = style.getPropertyValue("visibility"); //style의 속성이 visibility
+    		if(v == "hidden") //속성값이 hidden일때
+    			obj.style.visibility = "visible";
+    		else
+    			obj.style.visibility = "hidden";
+    	} }
+</script>
+</head>
+
+<body>
+  <h3>다음 빈 곳에 숨은 단어?
+    <button onclick="up()">show/hide</button>
+    <!--up()함수 동작-->
+  </h3>
+  <hr>
+  <ul>
+    <!--span 적용하면 숨겨짐-->
+    <li>I (<span>love</span>) you.
+    <li>CSS is Cascading
+      (<span>Style</span>) Sheet.
+    <li>응답하라 (<span>1988</span>).
+  </ul>
+
+</body>
+
+</html>
