@@ -23,10 +23,10 @@
 servlet 은 request로 부터 HttpSession 객체를 제공받음
 
 * 생성된 세션이 없었던 경우
- ** Container 에 의해 처리
- ** 새로운 세션 ID 생성
- ** 세션 ID를 클라이언트에게 보낼 준비
- ** 새로운 HttpSession 객체 생성 후 Servlet 에 제공
+  * Container 에 의해 처리
+  * 새로운 세션 ID 생성
+  * 세션 ID를 클라이언트에게 보낼 준비
+  * 새로운 HttpSession 객체 생성 후 Servlet 에 제공
  
 * 기존 세션이 있는 경우
- ** Request에 포함된 세션 ID에 해당하는 HttpSession객체를 찾아서 제공
+  * Request에 포함된 세션 ID에 해당하는 HttpSession객체를 찾아서 제공
