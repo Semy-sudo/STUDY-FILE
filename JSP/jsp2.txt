@@ -1,0 +1,8 @@
+Servlet
+
+httpServlet 클래스:
+httpServlet 상속받는 클래스는 doGet()메소드 오버라이딩하여 서블릿으로 동작할수 있다.
+
+doGet()메서드는 httpServletRequest와 httpServletResponse 두 파라미터 가짐
+->request 통해 웹 브라우저 요청정보 읽어옴
+->reponse통해 응답 전송
